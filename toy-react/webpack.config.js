@@ -20,7 +20,7 @@ module.exports = {
             plugins: [
               [
                 "@babel/plugin-transform-react-jsx",
-                { pragma: "ToyReact.createElement" },
+                { pragma: "createElement" },
               ],
             ],
           },
@@ -32,6 +32,6 @@ module.exports = {
     contentBase: path.join(__dirname, "/dist/"),
     inline: true,
     host: "localhost",
-    port: 8080,
+    port: 8000,
   },
 };
