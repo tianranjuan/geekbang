@@ -2,7 +2,17 @@ import { Component, render, createElement } from "./Toy-react";
 /**
  * UI = 模板 + 数据
  */
-// class MyComponent extends ToyReact.Component {
+// class MyComponent2 extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <h1>I'm MyComponent2 </h1>
+//       </div>
+//     );
+//   }
+// }
+
+// class MyComponent extends Component {
 //   constructor() {
 //     super();
 //     this.state = {
@@ -33,15 +43,15 @@ import { Component, render, createElement } from "./Toy-react";
 //   }
 // }
 
-// ToyReact.render(
+// render(
 //   <MyComponent id="testJSX" class="test-jsx">
 //     <div>abc</div>
-//     <div></div>
-//     <div></div>
-//     <div></div>
+//     <MyComponent2></MyComponent2>
 //   </MyComponent>,
 //   document.body
 // );
+
+////////////////////////////////
 
 class Square extends Component {
   render() {
@@ -167,6 +177,10 @@ class Game extends Component {
 // ========================================
 
 render(<Game />, document.getElementById("root"));
+
+// let game = <Game />;
+
+// console.log('game :>> ', game.vdom);
 
 function calculateWinner(squares) {
   const lines = [
